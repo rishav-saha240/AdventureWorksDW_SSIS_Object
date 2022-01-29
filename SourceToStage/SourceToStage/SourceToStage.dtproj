@@ -26,32 +26,46 @@
           <SSIS:Property SSIS:Name="CreatorComputerName">RISHAV</SSIS:Property>
           <SSIS:Property SSIS:Name="Description">
           </SSIS:Property>
-          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAr1JUxgYLKE24dv9SANZsNAAAAAACAAAAAAAQZgAAAAEAACAAAAAAitK7Qq75bQrUDPd2trdh4VELdp6UQVi8/gUpUuLa1gAAAAAOgAAAAAIAACAAAAA9SKsEInAUPG/G/m6D2y89ujsnaBExJc2KqP72C1/woJAAAADsAn18WbFxJKhGoBxovs4OoMLWd3w0J8pJ4T1x0ebtYW2JD+ikPQ5An28Mzo41Wm9aqlN+O4oUq7dZAGz/a5rCAIaZ3Pmd7/MGCgfiNILsVWRhDz1xvaXy6SLx/vHeKIPnhAd9ppxa6UD5oa4g/h5DGNSjBWDBPUhIGzjdRLjzC+UZu8AXeLmQGDrAGMMsz4RAAAAAM0Qp/mXmPOU7YcX6eyXOX3yPLe00F4wfCqoBt5cBfaaIUnCi4EOLSjfZOfQdf6GH/Nrd/RNIkkWR6g+NqM9Xow==</SSIS:Property>
+          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAr1JUxgYLKE24dv9SANZsNAAAAAACAAAAAAAQZgAAAAEAACAAAACYaU2ng652f6d24+QxvsBTLLKKXDPHT96Fwnzl+46I5wAAAAAOgAAAAAIAACAAAADftJsP9Uogy+cqdWnRur2FZa202Xk/K68Ye6dhHc10EZAAAACNRNz+vqifUp0UcGWnlBYe+MryDuCIZEma0xjepJ96/AjKa2LTq0hYOlxC5ASdVNcHKCgSj7tFlSOMyFgq/ebXScaJ+prdK93I54s3I56rAw3isvqPRsM0wOMnA7jpe8VieZgSSXklXo9f+3gQYtqxw2mpN+kRaK7J3Nne/nDV/n/5wMYJJJh11Fn5d0I/h8VAAAAA0bY2jeOh3DoaS3/YfLIQyZozfowXm/3sdCL+NHvbBkE2Jd3FBG+dulpaMOoRIkCdSxC5hLe71+evpLZUOg9Sbg==</SSIS:Property>
           <SSIS:Property SSIS:Name="FormatVersion">1</SSIS:Property>
         </SSIS:Properties>
         <SSIS:Packages>
-          <SSIS:Package SSIS:Name="ERP_Full.dtsx" SSIS:EntryPoint="1" />
+          <SSIS:Package SSIS:Name="ERP_Full_Load.dtsx" SSIS:EntryPoint="1" />
         </SSIS:Packages>
         <SSIS:ConnectionManagers />
         <SSIS:DeploymentInfo>
           <SSIS:ProjectConnectionParameters />
           <SSIS:PackageInfo>
-            <SSIS:PackageMetaData SSIS:Name="ERP_Full.dtsx">
+            <SSIS:PackageMetaData SSIS:Name="ERP_Full_Load.dtsx">
               <SSIS:Properties>
                 <SSIS:Property SSIS:Name="ID">{1DDF7861-CAEB-4A94-B0FE-1F992567E235}</SSIS:Property>
                 <SSIS:Property SSIS:Name="Name">Package</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">11</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">21</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{BE9BC018-3AC3-4E29-8478-13FC6579E73D}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{D32D0CA7-0F67-4EEC-8CF1-23849252CC7F}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
                 <SSIS:Property SSIS:Name="ProtectionLevel">1</SSIS:Property>
               </SSIS:Properties>
               <SSIS:Parameters>
+                <SSIS:Parameter SSIS:Name="OLTP_Stage_Erp_Person_Obtain">
+                  <SSIS:Properties>
+                    <SSIS:Property SSIS:Name="ID">{CB027855-C2C3-480D-A846-4CE540ACBF8C}</SSIS:Property>
+                    <SSIS:Property SSIS:Name="CreationName">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="Description">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">EXEC [dbo].[OLTP_Stage_Erp_Person_Obtain]</SSIS:Property>
+                    <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
+                  </SSIS:Properties>
+                </SSIS:Parameter>
                 <SSIS:Parameter SSIS:Name="CM.OLTP.ConnectByProxy">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
