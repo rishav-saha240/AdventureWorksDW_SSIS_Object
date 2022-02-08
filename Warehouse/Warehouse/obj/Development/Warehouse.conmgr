@@ -1,4 +1,4 @@
-﻿<?xml version="1.0"?>
+<?xml version="1.0"?>
 <DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
   DTS:ObjectName="RISHAV.AdventureWorks_Warehouse"
   DTS:DTSID="{65B17791-1726-41FC-91AD-25646A09C066}"
