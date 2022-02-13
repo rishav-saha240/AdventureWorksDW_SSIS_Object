@@ -8,7 +8,7 @@
   <LastBuildInfos>
     <ProjectBuildItemInfo>
       <Name>ERP_Full_Load.dtsx</Name>
-      <LastWriteTime>2022-02-06T16:59:36.3687648Z</LastWriteTime>
+      <LastWriteTime>2022-02-13T19:22:27.6991563Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
@@ -18,7 +18,7 @@
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>ERP_Incremental_Load.dtsx</Name>
-      <LastWriteTime>2022-01-30T19:46:19.3139569Z</LastWriteTime>
+      <LastWriteTime>2022-02-13T18:17:49.0328986Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
   </LastBuildInfos>
