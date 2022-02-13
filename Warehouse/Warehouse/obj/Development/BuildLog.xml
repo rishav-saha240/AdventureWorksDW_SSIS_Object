@@ -2,7 +2,7 @@
 <BuildLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <ProjectInfo>
     <Name>Warehouse</Name>
-    <LastWriteTime>2022-02-04T07:29:07.1574581Z</LastWriteTime>
+    <LastWriteTime>2022-02-11T05:51:53.9139737Z</LastWriteTime>
     <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
@@ -14,11 +14,6 @@
     <ProjectBuildItemInfo>
       <Name>DimCustomer.dtsx</Name>
       <LastWriteTime>2022-02-04T07:29:07.0948187Z</LastWriteTime>
-      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
-    </ProjectBuildItemInfo>
-    <ProjectBuildItemInfo>
-      <Name>DimDate.dtsx</Name>
-      <LastWriteTime>2022-02-04T07:30:26.095777Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
@@ -38,7 +33,17 @@
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>DimSalesTerriroty.dtsx</Name>
-      <LastWriteTime>2022-02-05T16:28:42.071597Z</LastWriteTime>
+      <LastWriteTime>2022-02-12T17:33:20.598814Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>DimDate.dtsx</Name>
+      <LastWriteTime>2022-02-10T06:36:17.5920723Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>RefreshSalesFact.dtsx</Name>
+      <LastWriteTime>2022-02-13T05:23:47.2633984Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
   </LastBuildInfos>

@@ -11,8 +11,8 @@
   DTS:LocaleID="16393"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="3"
-  DTS:VersionGUID="{9931EA84-54E0-4AE0-956B-016718859626}">
+  DTS:VersionBuild="4"
+  DTS:VersionGUID="{DE1152D2-E154-40DD-8117-A08B65134190}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />
@@ -48,7 +48,7 @@
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
         <NodeLayout
-          Size="202.666666666667,42.6666666666667"
+          Size="202.4,42.4"
           Id="Package\Refresh DimSalesTerritory"
           TopLeft="242.499996386468,118.299997884631" />
       </GraphLayout>
