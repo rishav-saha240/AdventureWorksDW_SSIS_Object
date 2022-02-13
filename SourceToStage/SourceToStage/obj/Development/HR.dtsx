@@ -11,8 +11,8 @@
   DTS:LocaleID="16393"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="10"
-  DTS:VersionGUID="{65AE704E-89DD-4074-AF05-C5D5BAA28ADF}">
+  DTS:VersionBuild="17"
+  DTS:VersionGUID="{8F4CA224-3ABD-41CF-A69D-D86550D72533}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -22,7 +22,7 @@
       DTS:DTSID="{7BDBC1DA-CC96-4FEF-AC0E-C13A6DE2F205}"
       DTS:ObjectName="OLTP">
       <DTS:PropertyExpression
-        DTS:Name="ConnectionString">@[$Project::OLTP_Source]</DTS:PropertyExpression>
+        DTS:Name="ConnectionString">@[$Project::ConString_OLTP_Source]</DTS:PropertyExpression>
       <DTS:ObjectData>
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
@@ -36,7 +36,7 @@
       DTS:DTSID="{4916AA77-845D-4C8F-B977-3AA25F0D03D0}"
       DTS:ObjectName="Stage">
       <DTS:PropertyExpression
-        DTS:Name="ConnectionString">@[$Project::WH_Stage]</DTS:PropertyExpression>
+        DTS:Name="ConnectionString">@[$Project::ConString_Stage]</DTS:PropertyExpression>
       <DTS:ObjectData>
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
@@ -897,6 +897,13 @@
                       refId="Package\HR - FULL LOAD\DFT - EmployeeDepartmentHistory\Derived Column.Inputs[Derived Column Input]"
                       description="Input to the Derived Column Transformation"
                       name="Derived Column Input">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\HR - FULL LOAD\DFT - EmployeeDepartmentHistory\Derived Column.Inputs[Derived Column Input].Columns[EndDate]"
+                          cachedDataType="dbDate"
+                          cachedName="EndDate"
+                          lineageId="Package\HR - FULL LOAD\DFT - EmployeeDepartmentHistory\OLE DB Source.Outputs[OLE DB Source Output].Columns[EndDate]" />
+                      </inputColumns>
                       <externalMetadataColumns />
                     </input>
                   </inputs>
@@ -950,6 +957,28 @@
                               description="Derived Column Friendly Expression"
                               expressionType="Notify"
                               name="FriendlyExpression">@[System::ServerExecutionID]</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\HR - FULL LOAD\DFT - EmployeeDepartmentHistory\Derived Column.Outputs[Derived Column Output].Columns[isActiveRecord]"
+                          dataType="bool"
+                          errorOrTruncationOperation="Computation"
+                          errorRowDisposition="FailComponent"
+                          lineageId="Package\HR - FULL LOAD\DFT - EmployeeDepartmentHistory\Derived Column.Outputs[Derived Column Output].Columns[isActiveRecord]"
+                          name="isActiveRecord"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.String"
+                              description="Derived Column Expression"
+                              name="Expression">[ISNULL](#{Package\HR - FULL LOAD\DFT - EmployeeDepartmentHistory\OLE DB Source.Outputs[OLE DB Source Output].Columns[EndDate]})</property>
+                            <property
+                              containsID="true"
+                              dataType="System.String"
+                              description="Derived Column Friendly Expression"
+                              expressionType="Notify"
+                              name="FriendlyExpression">ISNULL(EndDate)</property>
                           </properties>
                         </outputColumn>
                       </outputColumns>
@@ -1107,6 +1136,12 @@
                           cachedName="DepartmentName"
                           externalMetadataColumnId="Package\HR - FULL LOAD\DFT - EmployeeDepartmentHistory\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DepartmentName]"
                           lineageId="Package\HR - FULL LOAD\DFT - EmployeeDepartmentHistory\OLE DB Source.Outputs[OLE DB Source Output].Columns[DepartmentName]" />
+                        <inputColumn
+                          refId="Package\HR - FULL LOAD\DFT - EmployeeDepartmentHistory\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[isActiveRecord]"
+                          cachedDataType="bool"
+                          cachedName="isActiveRecord"
+                          externalMetadataColumnId="Package\HR - FULL LOAD\DFT - EmployeeDepartmentHistory\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[isActiveRecord]"
+                          lineageId="Package\HR - FULL LOAD\DFT - EmployeeDepartmentHistory\Derived Column.Outputs[Derived Column Output].Columns[isActiveRecord]" />
                       </inputColumns>
                       <externalMetadataColumns
                         isUsed="True">
@@ -1147,6 +1182,10 @@
                           dataType="wstr"
                           length="50"
                           name="DepartmentName" />
+                        <externalMetadataColumn
+                          refId="Package\HR - FULL LOAD\DFT - EmployeeDepartmentHistory\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[isActiveRecord]"
+                          dataType="bool"
+                          name="isActiveRecord" />
                       </externalMetadataColumns>
                     </input>
                   </inputs>
@@ -1773,7 +1812,7 @@
           DTS:LocaleID="-1"
           DTS:ObjectName="Truncate - Stage - Employee"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="2">
+          DTS:ThreadHint="0">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -1807,7 +1846,7 @@
           DTS:LocaleID="-1"
           DTS:ObjectName="Truncate - Stage - EmployeePayHistory"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="0">
+          DTS:ThreadHint="2">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -1949,7 +1988,7 @@
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="915.333333333334,206"
+          PanelSize="915.333333333334,206.666666666667"
           Size="915.333333333334,249.333333333334"
           Id="Package\HR - FULL LOAD"
           TopLeft="5.50000000000006,5.50000000000004" />
@@ -2054,19 +2093,19 @@
     design-time-name="Package\HR - FULL LOAD\DFT - EmployeeDepartmentHistory">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="150.666666666667,42.6666666666667"
           Id="Package\HR - FULL LOAD\DFT - EmployeeDepartmentHistory\OLE DB Source"
           TopLeft="317.187495273538,29.4124994740635" />
         <NodeLayout
-          Size="154.666666666667,42.6666666666667"
-          Id="Package\HR - FULL LOAD\DFT - EmployeeDepartmentHistory\Derived Column"
-          TopLeft="313.124995334074,132.241666137824" />
-        <NodeLayout
           Size="172,42.6666666666667"
           Id="Package\HR - FULL LOAD\DFT - EmployeeDepartmentHistory\OLE DB Destination"
           TopLeft="308.749995399266,218.724996088892" />
+        <NodeLayout
+          Size="154.666666666667,42.6666666666667"
+          Id="Package\HR - FULL LOAD\DFT - EmployeeDepartmentHistory\Derived Column"
+          TopLeft="313.124995334074,132.241666137824" />
         <EdgeLayout
           Id="Package\HR - FULL LOAD\DFT - EmployeeDepartmentHistory.Paths[OLE DB Source Output]"
           TopLeft="391.489578637139,72.0791661407302">
@@ -2086,9 +2125,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -2110,9 +2147,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
