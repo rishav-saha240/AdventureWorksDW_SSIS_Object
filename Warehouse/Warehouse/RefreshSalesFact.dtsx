@@ -11,8 +11,8 @@
   DTS:LocaleID="16393"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="25"
-  DTS:VersionGUID="{3125962E-72F4-4F1F-BD8C-E860F6CA40D6}">
+  DTS:VersionBuild="27"
+  DTS:VersionGUID="{E78650F9-23CB-4D91-90B1-AB77D421D453}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />
@@ -2081,12 +2081,6 @@ where [refTable].[FullDateAlternateKey] = ?</property>
                       externalMetadataColumnId="Package\Load - FactResellerSales\Load - FactResellerSales.Inputs[OLE DB Destination Input].ExternalColumns[SalesOrderNumber]"
                       lineageId="Package\Load - FactResellerSales\Read Stage.Outputs[OLE DB Source Output].Columns[SalesOrderID]" />
                     <inputColumn
-                      refId="Package\Load - FactResellerSales\Load - FactResellerSales.Inputs[OLE DB Destination Input].Columns[SalesLineNumber]"
-                      cachedDataType="i8"
-                      cachedName="SalesLineNumber"
-                      externalMetadataColumnId="Package\Load - FactResellerSales\Load - FactResellerSales.Inputs[OLE DB Destination Input].ExternalColumns[SalesOrderLineNumber]"
-                      lineageId="Package\Load - FactResellerSales\Read Stage.Outputs[OLE DB Source Output].Columns[SalesLineNumber]" />
-                    <inputColumn
                       refId="Package\Load - FactResellerSales\Load - FactResellerSales.Inputs[OLE DB Destination Input].Columns[OrderQty]"
                       cachedDataType="i2"
                       cachedName="OrderQty"
@@ -2118,6 +2112,12 @@ where [refTable].[FullDateAlternateKey] = ?</property>
                       cachedName="ResellerKey"
                       externalMetadataColumnId="Package\Load - FactResellerSales\Load - FactResellerSales.Inputs[OLE DB Destination Input].ExternalColumns[ResellerKey]"
                       lineageId="Package\Load - FactResellerSales\Lookup - ResellerKey.Outputs[Lookup Match Output].Columns[ResellerKey]" />
+                    <inputColumn
+                      refId="Package\Load - FactResellerSales\Load - FactResellerSales.Inputs[OLE DB Destination Input].Columns[SalesLineNumber]"
+                      cachedDataType="i8"
+                      cachedName="SalesLineNumber"
+                      externalMetadataColumnId="Package\Load - FactResellerSales\Load - FactResellerSales.Inputs[OLE DB Destination Input].ExternalColumns[SalesOrderLineNumber]"
+                      lineageId="Package\Load - FactResellerSales\Read Stage.Outputs[OLE DB Source Output].Columns[SalesLineNumber]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -2152,7 +2152,7 @@ where [refTable].[FullDateAlternateKey] = ?</property>
                       name="SalesOrderNumber" />
                     <externalMetadataColumn
                       refId="Package\Load - FactResellerSales\Load - FactResellerSales.Inputs[OLE DB Destination Input].ExternalColumns[SalesOrderLineNumber]"
-                      dataType="ui1"
+                      dataType="i8"
                       name="SalesOrderLineNumber" />
                     <externalMetadataColumn
                       refId="Package\Load - FactResellerSales\Load - FactResellerSales.Inputs[OLE DB Destination Input].ExternalColumns[OrderQuantity]"
@@ -4030,15 +4030,15 @@ where [refTable].[FullDateAlternateKey] = ?</property>
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="145.6,41.6"
+          Size="145.333333333334,41.3333333333334"
           Id="Package\Delete - Stage"
           TopLeft="316.428576817318,247.764709357159" />
         <NodeLayout
-          Size="193.6,41.6"
+          Size="193.333333333334,41.3333333333334"
           Id="Package\Load - FactInternetSales"
           TopLeft="290.000004938671,42.0588241192709" />
         <NodeLayout
-          Size="192.8,41.6"
+          Size="192.666666666667,41.3333333333334"
           Id="Package\Load - FactResellerSales"
           TopLeft="290.000004938671,143.658824119271" />
         <EdgeLayout
@@ -4517,47 +4517,47 @@ where [refTable].[FullDateAlternateKey] = ?</property>
       <GraphLayout
         Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="176,41.6"
+          Size="176,41.3333333333334"
           Id="Package\Load - FactResellerSales\Lookup - ProductKey"
           TopLeft="222.857146652377,153.705884508608" />
         <NodeLayout
-          Size="204.8,41.6"
+          Size="204.666666666667,41.3333333333334"
           Id="Package\Load - FactResellerSales\Lookup - SalesTerritoryKey"
           TopLeft="216.428575114328,712.294123148836" />
         <NodeLayout
-          Size="132,41.6"
+          Size="132,41.3333333333334"
           Id="Package\Load - FactResellerSales\Read Stage"
           TopLeft="245.000004172325,57.352941980824" />
         <NodeLayout
-          Size="164.8,41.6"
+          Size="164.666666666667,41.3333333333334"
           Id="Package\Load - FactResellerSales\Lookup - Currency"
           TopLeft="229.285718190427,540.964708992519" />
         <NodeLayout
-          Size="168.8,41.6"
+          Size="168.666666666667,41.3333333333334"
           Id="Package\Load - FactResellerSales\Lookup - Employee"
           TopLeft="243.5,902.8" />
         <NodeLayout
-          Size="188.8,41.6"
+          Size="188.666666666667,41.3333333333334"
           Id="Package\Load - FactResellerSales\Lookup - OrderDateKey"
           TopLeft="215.000003661428,259.235297753324" />
         <NodeLayout
-          Size="192.8,41.6"
+          Size="192.666666666667,41.3333333333334"
           Id="Package\Load - FactResellerSales\Load - FactResellerSales"
           TopLeft="225.857146737527,992.900005834243" />
         <NodeLayout
-          Size="176.8,41.6"
+          Size="176.666666666667,41.3333333333334"
           Id="Package\Load - FactResellerSales\Lookup - ResellerKey"
           TopLeft="223.571432378827,624.400006198883" />
         <NodeLayout
-          Size="182.4,41.6"
+          Size="182.666666666667,41.3333333333334"
           Id="Package\Load - FactResellerSales\Lookup - ShipDateKey"
           TopLeft="221.428575199478,453.36471081572" />
         <NodeLayout
-          Size="180.8,41.6"
+          Size="180.666666666667,41.3333333333334"
           Id="Package\Load - FactResellerSales\Lookup - DueDateKey"
           TopLeft="218.571432293678,359.411769746497" />
         <NodeLayout
-          Size="152.8,41.6"
+          Size="152.666666666667,41.3333333333334"
           Id="Package\Load - FactResellerSales\Derived Column"
           TopLeft="248,812.4" />
         <EdgeLayout
