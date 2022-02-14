@@ -11,8 +11,8 @@
   DTS:LocaleID="16393"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="42"
-  DTS:VersionGUID="{1E9277EF-2F6C-405E-9964-1290D0FCD466}">
+  DTS:VersionBuild="45"
+  DTS:VersionGUID="{250DA157-BB86-47C1-9A84-636231CD3418}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />
@@ -3821,7 +3821,7 @@
           DTS:LocaleID="-1"
           DTS:ObjectName="Truncate - Stage - Customer"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="0">
+          DTS:ThreadHint="2">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -3838,7 +3838,7 @@
           DTS:LocaleID="-1"
           DTS:ObjectName="Truncate - Stage - Person"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="1">
+          DTS:ThreadHint="0">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -3855,7 +3855,7 @@
           DTS:LocaleID="-1"
           DTS:ObjectName="Truncate - Stage - Person Address"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="2">
+          DTS:ThreadHint="1">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -5081,7 +5081,7 @@
           DTS:LocaleID="-1"
           DTS:ObjectName="Truncate - Stage - ProductSubCategory"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="1">
+          DTS:ThreadHint="2">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -5098,7 +5098,7 @@
           DTS:LocaleID="-1"
           DTS:ObjectName="Truncate - Stage - SalesTerritory"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="2">
+          DTS:ThreadHint="0">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -5115,7 +5115,7 @@
           DTS:LocaleID="-1"
           DTS:ObjectName="Truncate - Stage - Store"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="0">
+          DTS:ThreadHint="1">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -5782,30 +5782,30 @@
         <NodeLayout
           Size="154.666666666667,42.6666666666667"
           Id="Package\Sequence Container\DFT - Customer"
-          TopLeft="541.5,108.166666666667" />
+          TopLeft="8.8333333333333,108.166666666667" />
         <NodeLayout
           Size="141.333333333334,42.6666666666667"
           Id="Package\Sequence Container\DFT - Person"
-          TopLeft="40.1666666666668,108.166666666667" />
+          TopLeft="262.5,108.166666666667" />
         <NodeLayout
           Size="181.333333333334,42.6666666666667"
           Id="Package\Sequence Container\DFT - Person Address"
-          TopLeft="286.166666666667,108.166666666667" />
+          TopLeft="508.5,108.166666666667" />
         <NodeLayout
           Size="161.333333333334,42.6666666666667"
           Id="Package\Sequence Container\Truncate - Stage - Customer"
-          TopLeft="538.166666666667,5.49999999999993" />
+          TopLeft="5.49999999999996,5.50000000000004" />
         <NodeLayout
           Size="210.666666666667,42.6666666666667"
           Id="Package\Sequence Container\Truncate - Stage - Person"
-          TopLeft="5.5000000000001,5.50000000000004" />
+          TopLeft="227.833333333333,5.49999999999993" />
         <NodeLayout
           Size="200.666666666667,42.6666666666667"
           Id="Package\Sequence Container\Truncate - Stage - Person Address"
-          TopLeft="276.5,5.49999999999993" />
+          TopLeft="498.833333333333,5.49999999999993" />
         <EdgeLayout
           Id="Package\Sequence Container.PrecedenceConstraints[Constraint 1 1]"
-          TopLeft="618.833333333333,48.1666666666666">
+          TopLeft="86.1666666666666,48.1666666666667">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -5827,7 +5827,7 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Sequence Container.PrecedenceConstraints[Constraint 1 2]"
-          TopLeft="110.833333333333,48.1666666666667">
+          TopLeft="333.166666666667,48.1666666666666">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -5849,7 +5849,7 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Sequence Container.PrecedenceConstraints[Constraint 1 2 1]"
-          TopLeft="376.833333333333,48.1666666666666">
+          TopLeft="599.166666666667,48.1666666666666">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -5879,30 +5879,30 @@
         <NodeLayout
           Size="186.666666666667,42.6666666666667"
           Id="Package\Sequence Container 1\DFT - ProductSubCategory"
-          TopLeft="513.833333333333,108.166666666667" />
+          TopLeft="8.5000000000001,108.166666666667" />
         <NodeLayout
           Size="174.666666666667,42.6666666666667"
           Id="Package\Sequence Container 1\DFT - SalesTerritory"
-          TopLeft="267.833333333333,108.166666666667" />
+          TopLeft="266.5,108.166666666667" />
         <NodeLayout
           Size="133.333333333334,42.6666666666667"
           Id="Package\Sequence Container 1\DFT - Store"
-          TopLeft="35.5,108.166666666667" />
+          TopLeft="540.166666666667,108.166666666667" />
         <NodeLayout
           Size="192.666666666667,42.6666666666667"
           Id="Package\Sequence Container 1\Truncate - Stage - ProductSubCategory"
-          TopLeft="510.833333333333,5.49999999999993" />
+          TopLeft="5.5000000000001,5.50000000000004" />
         <NodeLayout
           Size="190.666666666667,42.6666666666667"
           Id="Package\Sequence Container 1\Truncate - Stage - SalesTerritory"
-          TopLeft="259.833333333333,5.49999999999993" />
+          TopLeft="258.5,5.49999999999993" />
         <NodeLayout
           Size="193.333333333334,42.6666666666667"
           Id="Package\Sequence Container 1\Truncate - Stage - Store"
-          TopLeft="5.50000000000001,5.50000000000004" />
+          TopLeft="510.166666666667,5.49999999999993" />
         <EdgeLayout
           Id="Package\Sequence Container 1.PrecedenceConstraints[Constraint 1 1 1]"
-          TopLeft="355.166666666667,48.1666666666666">
+          TopLeft="353.833333333333,48.1666666666666">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -5924,7 +5924,7 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Sequence Container 1.PrecedenceConstraints[Constraint 1 1 1 1]"
-          TopLeft="102.166666666667,48.1666666666667">
+          TopLeft="606.833333333333,48.1666666666666">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -5946,7 +5946,7 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Sequence Container 1.PrecedenceConstraints[Constraint 4]"
-          TopLeft="607.166666666667,48.1666666666666">
+          TopLeft="101.833333333333,48.1666666666667">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"

@@ -11,8 +11,8 @@
   DTS:LocaleID="16393"
   DTS:ObjectName="ERP_Incremental_Load"
   DTS:PackageType="5"
-  DTS:VersionBuild="28"
-  DTS:VersionGUID="{694E8EFB-CC10-48AA-A63B-BFAB78E9733A}">
+  DTS:VersionBuild="30"
+  DTS:VersionGUID="{851F729A-C333-4860-8F6E-04C9502F0972}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables>
@@ -2006,8 +2006,8 @@
                   <connections>
                     <connection
                       refId="Package\Incremental Load\DFT - SalesOrderDetail\DST - Stage - erp_SalesOrderDetail.Connections[OleDbConnection]"
-                      connectionManagerID="{4916AA77-845D-4C8F-B977-3AA25F0D03D0}:invalid"
-                      connectionManagerRefId="{4916AA77-845D-4C8F-B977-3AA25F0D03D0}:invalid"
+                      connectionManagerID="{C4C2FDBD-7D87-4801-B0BE-828329151D1C}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[RISHAV.AdventureWorks_Stage]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -2250,8 +2250,8 @@
                   <connections>
                     <connection
                       refId="Package\Incremental Load\DFT - SalesOrderDetail\Read - SalesOrderDetail.Connections[OleDbConnection]"
-                      connectionManagerID="{7BDBC1DA-CC96-4FEF-AC0E-C13A6DE2F205}:invalid"
-                      connectionManagerRefId="{7BDBC1DA-CC96-4FEF-AC0E-C13A6DE2F205}:invalid"
+                      connectionManagerID="{538EC362-36AD-480F-8D46-22E04214D951}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[RISHAV.AdventureWorks2019OLTP]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -2656,8 +2656,8 @@
                   <connections>
                     <connection
                       refId="Package\Incremental Load\DFT - SalesOrderHeader\DST - Stage - erp_SalesHeader.Connections[OleDbConnection]"
-                      connectionManagerID="{4916AA77-845D-4C8F-B977-3AA25F0D03D0}:invalid"
-                      connectionManagerRefId="{4916AA77-845D-4C8F-B977-3AA25F0D03D0}:invalid"
+                      connectionManagerID="{C4C2FDBD-7D87-4801-B0BE-828329151D1C}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[RISHAV.AdventureWorks_Stage]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -2831,6 +2831,12 @@
                           cachedName="ModifiedDate"
                           externalMetadataColumnId="Package\Incremental Load\DFT - SalesOrderHeader\DST - Stage - erp_SalesHeader.Inputs[OLE DB Destination Input].ExternalColumns[ModifiedDate]"
                           lineageId="Package\Incremental Load\DFT - SalesOrderHeader\Read - SalesOrderHeader.Outputs[OLE DB Source Output].Columns[ModifiedDate]" />
+                        <inputColumn
+                          refId="Package\Incremental Load\DFT - SalesOrderHeader\DST - Stage - erp_SalesHeader.Inputs[OLE DB Destination Input].Columns[SSID_ID]"
+                          cachedDataType="i8"
+                          cachedName="SSID_ID"
+                          externalMetadataColumnId="Package\Incremental Load\DFT - SalesOrderHeader\DST - Stage - erp_SalesHeader.Inputs[OLE DB Destination Input].ExternalColumns[SSIS_ID]"
+                          lineageId="Package\Incremental Load\DFT - SalesOrderHeader\Derived Column.Outputs[Derived Column Output].Columns[SSID_ID]" />
                       </inputColumns>
                       <externalMetadataColumns
                         isUsed="True">
@@ -3045,17 +3051,17 @@
                       dataType="System.Int32"
                       description="Specifies the mode used to access the database."
                       name="AccessMode"
-                      typeConverter="AccessMode">0</property>
+                      typeConverter="AccessMode">2</property>
                     <property
                       dataType="System.String"
                       description="The mappings between the parameters in the SQL command and variables."
-                      name="ParameterMapping">"Parameter0:Input",{D3F500D3-6A6B-400A-BECA-514215DBBE4F};</property>
+                      name="ParameterMapping">"0:Input",{D3F500D3-6A6B-400A-BECA-514215DBBE4F};</property>
                   </properties>
                   <connections>
                     <connection
                       refId="Package\Incremental Load\DFT - SalesOrderHeader\Read - SalesOrderHeader.Connections[OleDbConnection]"
-                      connectionManagerID="{C4C2FDBD-7D87-4801-B0BE-828329151D1C}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[RISHAV.AdventureWorks_Stage]"
+                      connectionManagerID="{538EC362-36AD-480F-8D46-22E04214D951}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[RISHAV.AdventureWorks2019OLTP]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -4192,13 +4198,13 @@
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="192,42.6666666666667"
-          Id="Package\Incremental Load\DFT - SalesOrderDetail\Read - SalesOrderDetail"
-          TopLeft="32.1666666666667,5.50000000000004" />
-        <NodeLayout
           Size="154.666666666667,42.6666666666667"
           Id="Package\Incremental Load\DFT - SalesOrderDetail\Derived Column"
           TopLeft="50.8333333333334,108.166666666667" />
+        <NodeLayout
+          Size="192,42.6666666666667"
+          Id="Package\Incremental Load\DFT - SalesOrderDetail\Read - SalesOrderDetail"
+          TopLeft="32.1666666666667,5.50000000000004" />
         <NodeLayout
           Size="245.333333333334,42.6666666666667"
           Id="Package\Incremental Load\DFT - SalesOrderDetail\DST - Stage - erp_SalesOrderDetail"
