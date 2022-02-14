@@ -11,8 +11,8 @@
   DTS:LocaleID="16393"
   DTS:ObjectName="ERP_Incremental_Load"
   DTS:PackageType="5"
-  DTS:VersionBuild="30"
-  DTS:VersionGUID="{851F729A-C333-4860-8F6E-04C9502F0972}">
+  DTS:VersionBuild="31"
+  DTS:VersionGUID="{7D459802-CBD0-4D90-ABBE-2390F098E8BA}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables>
@@ -3613,7 +3613,7 @@
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
               SQLTask:Connection="{C4C2FDBD-7D87-4801-B0BE-828329151D1C}"
-              SQLTask:SqlStatementSource="select top 1 [SalesHeaderMaxDate] as [maxDate] from [StageControl].[ErpIncremental] order by 1 desc"
+              SQLTask:SqlStatementSource="select max([SalesHeaderMaxDate]) as [maxDate] from [StageControl].[ErpIncremental] order by 1 desc"
               SQLTask:ResultType="ResultSetType_SingleRow" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
               <SQLTask:ResultBinding
                 SQLTask:ResultName="maxDate"
@@ -3861,10 +3861,14 @@
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="452.666666666667,205.333333333334"
+          PanelSize="452.666666666667,206"
           Size="452.666666666667,248.666666666667"
           Id="Package\Incremental Load"
           TopLeft="608.5,108.166666666667" />
+        <NodeLayout
+          Size="186.666666666667,42.6666666666667"
+          Id="Package\IncrementalErp - Entry"
+          TopLeft="486.547611996177,583.666657932883" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
           TopLeft="803.611111111111,48.1666666666666">
@@ -3937,10 +3941,6 @@
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="186.666666666667,42.6666666666667"
-          Id="Package\IncrementalErp - Entry"
-          TopLeft="486.547611996177,583.666657932883" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 2]"
           TopLeft="276.833333333333,356.833333333334">
@@ -4342,7 +4342,7 @@
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Incremental Load\DFT - SalesOrderHeader\DST - Stage - erp_SalesHeader">
+    design-time-name="Package\Incremental Load\DFT - SalesOrderHeader\Read - SalesOrderHeader">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -4355,7 +4355,7 @@
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Incremental Load\DFT - SalesOrderHeader\Read - SalesOrderHeader">
+    design-time-name="Package\Incremental Load\DFT - SalesOrderHeader\DST - Stage - erp_SalesHeader">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
