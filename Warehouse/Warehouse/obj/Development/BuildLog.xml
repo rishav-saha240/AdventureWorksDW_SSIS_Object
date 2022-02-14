@@ -2,48 +2,48 @@
 <BuildLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <ProjectInfo>
     <Name>Warehouse</Name>
-    <LastWriteTime>2022-02-11T05:51:53.9139737Z</LastWriteTime>
+    <LastWriteTime>2022-02-14T08:12:55.1937815Z</LastWriteTime>
     <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
     <ProjectBuildItemInfo>
       <Name>DimCurrency.dtsx</Name>
-      <LastWriteTime>2022-02-01T19:19:17.1564703Z</LastWriteTime>
+      <LastWriteTime>2022-02-14T08:12:55.1760598Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>DimCustomer.dtsx</Name>
-      <LastWriteTime>2022-02-04T07:29:07.0948187Z</LastWriteTime>
+      <LastWriteTime>2022-02-14T08:12:55.1762383Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>DimEmployee.dtsx</Name>
-      <LastWriteTime>2022-02-08T06:09:00.1461712Z</LastWriteTime>
+      <LastWriteTime>2022-02-14T08:12:55.179198Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>DimProduct.dtsx</Name>
-      <LastWriteTime>2022-02-05T10:45:54.7535428Z</LastWriteTime>
+      <LastWriteTime>2022-02-14T08:12:55.1792483Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>DimReseller.dtsx</Name>
-      <LastWriteTime>2022-02-05T16:42:54.0822905Z</LastWriteTime>
+      <LastWriteTime>2022-02-14T08:12:55.1806624Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>DimSalesTerriroty.dtsx</Name>
-      <LastWriteTime>2022-02-12T17:33:20.598814Z</LastWriteTime>
+      <LastWriteTime>2022-02-14T08:12:55.1806624Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>DimDate.dtsx</Name>
-      <LastWriteTime>2022-02-10T06:36:17.5920723Z</LastWriteTime>
+      <LastWriteTime>2022-02-14T08:12:55.1774572Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>RefreshSalesFact.dtsx</Name>
-      <LastWriteTime>2022-02-13T05:30:02.2974902Z</LastWriteTime>
+      <LastWriteTime>2022-02-14T08:16:44.5003905Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
   </LastBuildInfos>

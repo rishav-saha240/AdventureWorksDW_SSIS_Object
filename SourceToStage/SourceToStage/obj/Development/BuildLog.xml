@@ -2,23 +2,23 @@
 <BuildLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <ProjectInfo>
     <Name>SourceToStage</Name>
-    <LastWriteTime>2022-02-06T16:59:36.439647Z</LastWriteTime>
+    <LastWriteTime>2022-02-14T08:47:00.5579722Z</LastWriteTime>
     <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
     <ProjectBuildItemInfo>
       <Name>ERP_Full_Load.dtsx</Name>
-      <LastWriteTime>2022-02-13T19:22:27.6991563Z</LastWriteTime>
+      <LastWriteTime>2022-02-14T08:45:07.3717817Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>HR.dtsx</Name>
-      <LastWriteTime>2022-02-06T17:02:05.6381278Z</LastWriteTime>
+      <LastWriteTime>2022-02-14T08:31:20.5992719Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>ERP_Incremental_Load.dtsx</Name>
-      <LastWriteTime>2022-02-13T18:17:49.0328986Z</LastWriteTime>
+      <LastWriteTime>2022-02-14T08:44:17.6376092Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
   </LastBuildInfos>
